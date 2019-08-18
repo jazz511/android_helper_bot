@@ -7,7 +7,7 @@ echo "const botConfig = {
  token: '872551442:AAEIIaNdhNM9Nb60THLK0KFFa25puXXl7hk', //Your bot token
 };
 
-module.exports = botConfig;" > conig.fs
+module.exports = botConfig;" > conig.js
 
 npm install
 
