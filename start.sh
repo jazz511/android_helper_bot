@@ -9,8 +9,6 @@ echo "const botConfig = {
 
 module.exports = botConfig;" > config.js
 
-git clone https://github.com/Bannerets/tdlib-binaries
-cp tdlib-binaries/1.2.0/linux64/libtdjson.so ./
 ls -a
 
 npm install
