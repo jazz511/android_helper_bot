@@ -8,9 +8,8 @@ echo "const botConfig = {
 };
 
 module.exports = botConfig;" > config.js 
-sudo apt install wget
-apt install wget
-wget https://github.com/Bannerets/tdlib-binaries/blob/master/1.2.0/linux64/libtdjson.so
+sudo apt install subversion
+svn checkout https://github.com/Bannerets/tdlib-binaries/trunk/1.2.0/linux64 ./
 
 ls -a
 
