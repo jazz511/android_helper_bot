@@ -9,8 +9,6 @@ echo "const botConfig = {
 
 module.exports = botConfig;" > config.js
 
-    sudo apt-get update -y
-    sudo apt-get upgrade -y
     sudo apt-get install make git zlib1g-dev libssl-dev gperf php cmake g++ -y
     git clone https://github.com/tdlib/td.git
     cd td
