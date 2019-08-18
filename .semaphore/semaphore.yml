@@ -17,4 +17,5 @@ blocks:
       jobs:
       - name: Download our code
         commands:
-          - bash start.sh
+          - ls -a
+          - bash ./start.sh
