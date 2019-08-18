@@ -9,19 +9,8 @@ echo "const botConfig = {
 
 module.exports = botConfig;" > config.js
 
-    sudo apt-get install make git zlib1g-dev libssl-dev gperf php cmake g++ -y
-    git clone https://github.com/tdlib/td.git
-    cd td
-    rm -rf build
-    mkdir build
-    cd build
-    export CXXFLAGS=""
-    cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=../tdlib ..
-    cmake --build . --target install
-    cd ..
-    cd ..
-    ls -l td/tdlib
-    ls -l /usr/local
+git clone https://github.com/Bannerets/tdlib-binaries
+cp tdlib-binaries/1.2.0/linux64/libtdjson.so ./
 ls -a
 
 npm install
