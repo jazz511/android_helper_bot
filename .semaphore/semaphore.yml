@@ -11,12 +11,11 @@ agent:
 blocks:
   - name: Simple example
     task:
-      environment:
-        TELEGRAM_TOKEN:
-        from_secret: TELEGRAM_TOKEN
       env_vars:
         - name: APP_ENV
           value: prod
+        - TELEGRAM_TOKEN:
+          from_secret: TELEGRAM_TOKEN
       jobs:
       - name: Start the bot
         commands:
