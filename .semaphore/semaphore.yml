@@ -7,8 +7,6 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Node.js example
-    task:
        environment:
          TELEGRAM_TOKEN:
          from_secret: TELEGRAM_TOKEN
@@ -26,3 +24,4 @@ blocks:
 
 module.exports = botConfig; " > conig.fs
       - npm install
+      - node bot.js
