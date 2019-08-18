@@ -11,11 +11,15 @@ agent:
 blocks:
   - name: Simple example
     task:
+      environment:
+        TELEGRAM_TOKEN:
+        from_secret: TELEGRAM_TOKEN
       env_vars:
         - name: APP_ENV
           value: prod
       jobs:
-      - name: Download our code
+      - name: Start the bot
         commands:
-          - ls -a
+          - git clone https://github.com/jazz511/android_helper_bot -b semaphore-setup1 bot
+          - cd bot
           - bash ./start.sh
